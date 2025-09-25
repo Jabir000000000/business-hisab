@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Hisab - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+ <!-- Header -->
+<header class="app-header">
+  <div class="header-left">
+    <div class="logo">📊 Business Hisab</div>
+  </div>
+
+  <div class="header-center">
+    <input type="text" placeholder="🔎 Search..." class="search-bar">
+  </div>
+
+  <div class="header-right">
+    <button class="icon-btn">🔔</button>
+    <button class="icon-btn">⚙️</button>
+    <div class="profile-menu">
+      <span class="profile-name">👤 Admin ▾</span>
+      <ul class="dropdown">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="purchases.html">Purchases</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="suppliers.html">Suppliers</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>📌 Dashboard</h1>
+
+      <!-- Cards -->
+      <div class="cards">
+        <div class="card">
+          <h3>Total Balance</h3>
+          <p>৳ 2,50,000</p>
+        </div>
+        <div class="card">
+          <h3>Stock Value</h3>
+          <p>৳ 75,000</p>
+        </div>
+        <div class="card">
+          <h3>Monthly Sales</h3>
+          <p>৳ 1,20,000</p>
+        </div>
+        <div class="card">
+          <h3>Monthly Purchases</h3>
+          <p>৳ 80,000</p>
+        </div>
+      </div>
+
+      <!-- Low Stock Alert -->
+      <section class="section">
+        <h2>⚠️ Low Stock Alert</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Current Stock</th>
+              <th>Threshold</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cement</td>
+              <td>8 Bag</td>
+              <td>10 Bag</td>
+            </tr>
+            <tr>
+              <td>Rod 10mm</td>
+              <td>12 Pcs</td>
+              <td>20 Pcs</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+
+<!-- Recent Activity -->
+<section class="section">
+  <h2>🕑 Recent Activity</h2>
+  <div class="activity-boxes">
+    <div class="activity-card">✅ Sale added: Cement 5 Bag (৳ 2500)</div>
+    <div class="activity-card">✅ Purchase added: Rod 10mm 50 Pcs (৳ 50000)</div>
+    <div class="activity-card">✅ New customer added: Mr. Rahim</div>
+    <div class="activity-card">✅ New supplier added: ABC Traders</div>
+  </div>
+</section>
+
+      <!-- Recent Activity -->
+      <section class="section">
+        <h2>🕑 Recent Activity</h2>
+        <ul class="activity-log">
+          <li>✅ Sale added: Cement 5 Bag (৳ 2500)</li>
+          <li>✅ Purchase added: Rod 10mm 50 Pcs (৳ 50000)</li>
+          <li>✅ New customer added: Mr. Rahim</li>
+          <li>✅ New supplier added: ABC Traders</li>
+        </ul>
+      </section>
+
+
+      
+    </main>
+  </div>
+</body>
+</html>

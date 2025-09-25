@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Hisab - Customers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+  <div class="header-left">
+    <div class="logo">📊 Business Hisab</div>
+  </div>
+
+  <div class="header-center">
+    <input type="text" placeholder="🔎 Search..." class="search-bar">
+  </div>
+
+  <div class="header-right">
+    <button class="icon-btn">🔔</button>
+    <button class="icon-btn">⚙️</button>
+    <div class="profile-menu">
+      <span class="profile-name">👤 Admin ▾</span>
+      <ul class="dropdown">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="purchases.html">Purchases</a></li>
+        <li><a href="customers.html" class="active">Customers</a></li>
+        <li><a href="suppliers.html">Suppliers</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>👥 Customer Management</h1>
+
+      <!-- Customer Entry Form -->
+      <section class="section">
+        <h2>➕ Add New Customer</h2>
+        <form class="form">
+          <label for="cname">Customer Name</label>
+          <input type="text" id="cname" placeholder="Enter customer name">
+
+          <label for="cphone">Phone</label>
+          <input type="text" id="cphone" placeholder="Enter phone number">
+
+          <label for="cemail">Email</label>
+          <input type="email" id="cemail" placeholder="Enter email">
+
+          <label for="caddress">Address</label>
+          <input type="text" id="caddress" placeholder="Enter address">
+
+          <button type="submit" class="btn-save">Save Customer</button>
+        </form>
+      </section>
+
+      <!-- Customers List -->
+      <section class="section">
+        <h2>📋 Customer List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#C-001</td>
+              <td>Mr. Rahim</td>
+              <td>01711-000111</td>
+              <td>rahim@example.com</td>
+              <td>Dhaka</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#C-002</td>
+              <td>Mr. Karim</td>
+              <td>01722-111222</td>
+              <td>karim@example.com</td>
+              <td>Chittagong</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
